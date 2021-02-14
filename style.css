@@ -82,7 +82,7 @@ h2 {
 
 .frame-bg {
   background: rgba(13, 13, 13, 0.6);
-  width: 100vw;
+  max-width: 1400px;
   height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -145,8 +145,12 @@ h2 {
 
 @media only screen and (max-width: 975px) {
   .frame-bg {
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; */
+    display: inline-flex;
+    /* flex-direction: column-reverse; */
+    height: 100%;
+    padding-bottom: 40px;
   }
 }
